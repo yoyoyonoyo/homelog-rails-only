@@ -1,0 +1,13 @@
+.main
+  .main-frame
+    .main-frame__titles
+      .main-frame__title
+        ほめログ
+      .main-frame__comment
+        自分で自分を褒める日記を</br>
+        作ってみませんか？
+    .main-frame__gif
+      %img(src="#" alt="move-sample.gif" class="main-frame__gif__img")
+    .main-frame__btn
+      = link_to '新規登録', new_user_registration_path , class: "main-frame__btn__new"
+      = link_to 'ログイン', new_user_session_path ,class: "main-frame__btn__login"

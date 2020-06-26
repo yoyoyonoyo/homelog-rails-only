@@ -1,0 +1,180 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 70px 1fr 70px;
+}
+
+.header {
+  grid-column: 1 / 3 ;
+  grid-row: 1 / 2 ;
+  background-color: lightpink;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Sawarabi Gothic', sans-serif;
+
+  &__logo {
+    color: black;
+    font-size: 20px;
+  }
+
+  &__word {
+    font-size: 15px;
+  }
+}
+
+.main {
+  grid-column: 1 / 3 ;
+  grid-row: 2 / 3 ;
+  background-color: whitesmoke;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sawarabi Gothic', sans-serif;
+
+  .AccountPage {
+    width: 980px;
+    padding: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .AccountPage__title {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 200;
+
+    h2 {
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      font-size: 40px;
+      &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        margin-top: 5px;
+        border-bottom: 1px solid #38aef0;
+      }
+    }
+
+    .Button {
+      margin-top: 40px;
+      color: #fff;
+      background-color: #ccc;
+    }
+  }
+}
+
+.AccountPage__form {
+  width: 50%;
+}
+
+.FormField {
+  margin-bottom: 10px;
+  &__label--normal {
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    i {
+      font-size: 11px;
+    }
+    .field_with_errors {
+      display: inline-block;
+      color: #d65f4c;
+      font-weight: 400;
+    }
+  }
+  &__input--normal {
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      letter-spacing: 1px;
+    }
+    .field_with_errors {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #d65f4c;
+      }
+    }
+  }
+}
+
+.Button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.UserButton {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #38aef0;
+}
+
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  h2 {
+    margin-bottom: 10px;
+    color: #d65f4c;
+    font-size: 14px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    list-style: square;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+
+.footer {
+  grid-column: 1 / 3 ;
+  grid-row: 3 / 4 ;
+  background-color:lightpink;
+  padding: 10px;
+  &__form {
+    &__text {
+      height: 45px;
+      width: calc(100vw - 400px);
+      background-color: white;
+      border: 1px solid white;
+      margin-right: 5px;
+    }
+    &__btn {
+      height: 45px;
+      background-color: white;
+      border: 1px solid white;
+      font-weight: bold;
+    }
+  }
+}

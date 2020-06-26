@@ -1,0 +1,19 @@
+%h1 Listing parises
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @parises.each do |parise|
+      %tr
+        %td= link_to 'Show', parise
+        %td= link_to 'Edit', edit_parise_path(parise)
+        %td= link_to 'Destroy', parise, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Parise', new_parise_path
