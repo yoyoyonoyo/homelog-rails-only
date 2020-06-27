@@ -38,12 +38,15 @@
   .AccountPage {
     width: 980px;
     padding: 60px;
+    color: palevioletred;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
     display: flex;
     justify-content: space-between;
   }
+
   .AccountPage__title {
     width: 50%;
     font-size: 14px;

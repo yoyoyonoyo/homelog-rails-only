@@ -107,6 +107,7 @@ a {
         border-radius: 10px;
         text-align: center;
         margin-right: 100px;
+        color: black;
       }
 
       &__login {
@@ -119,26 +120,9 @@ a {
         background-color: lightgoldenrodyellow;
         border-radius: 10px;
         text-align: center;
+        color: black;
       }
     }
-  }
-}
-
-.left-nav {
-  grid-column: 1 / 2 ;
-  grid-row: 2 / 3 ;
-  background-color: lightgrey;
-  padding: 20px 5px;
-}
-
-.right-main {
-  grid-column: 2 / 3 ;
-  grid-row: 2 / 3 ;
-  background-color: lightgrey;
-  padding: 20px;
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
 

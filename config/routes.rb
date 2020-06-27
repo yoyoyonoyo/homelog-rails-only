@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   end
   resources :genres,only: [:edit, :update, :create, :destroy,]
   resources :likes, only: [:create, :destroy]
-  # resources :likes, only: [:create, :destroy]
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :users, only: [:index, :show]
   root to: "top#index"
 end
