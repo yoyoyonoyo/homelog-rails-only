@@ -10,7 +10,7 @@ class DiariesController < Users::ApplicationController
   def new
     @diary = Diary.new
     @diary.build_genre
-    @diary.build_parise
+    @diary.build_parise(user_id: current_user.id)
   end
 
   # GET /diaries/1/edit
@@ -21,7 +21,6 @@ class DiariesController < Users::ApplicationController
   def create
     @diary = Diary.new(diary_params)
     @diary.save!
-    # binding.pry
     if @diary.save
       flash[:success] = "投稿が完了しました！"
       redirect_to diaries_url
@@ -58,7 +57,8 @@ class DiariesController < Users::ApplicationController
 
   # Only allow a list of trusted parameters through.
   def diary_params
-    params.require(:diary).permit(:content, :created_at, genre_attributes: [:id, :content,:diary_id] ,parise_attributes: [:id, :content, :diary_id]).merge(user_id: current_user.id)
+    params.require(:diary)[:parise_attributes][:user_id] = current_user.id
+    params.require(:diary).permit(:content, :created_at, genre_attributes: [:id, :content,:diary_id] ,parise_attributes: [:id, :content, :diary_id, :user_id]).merge(user_id: current_user.id)
   end
 
 end
