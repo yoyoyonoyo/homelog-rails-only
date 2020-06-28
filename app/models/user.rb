@@ -8,6 +8,11 @@ class User < ApplicationRecord
   has_many :diaries, dependent: :destroy
   has_many :genres, dependent: :destroy
   has_many :likes, dependent: :destroy
-  has_many :parises, through: :likes
+  has_many :parises, dependent: :destroy
+  has_many :liked_parises, through: :likes, source: :parise
+
+  def already_liked?(parise)
+    self.likes.exists?(parise_id: parise.id)
+  end
 
 end

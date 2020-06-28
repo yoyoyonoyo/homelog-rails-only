@@ -4,21 +4,10 @@ class ParisesController < Users::ApplicationController
   # GET /parises
   # GET /parises.json
   def index
-    @parises = Parise.all
-  end
-
-  # GET /parises/1
-  # GET /parises/1.json
-  def show
-  end
-
-  # GET /parises/new
-  def new
-    @parise = Parise.new
-  end
-
-  # GET /parises/1/edit
-  def edit
+    @parises = current_user.parises
+    @user = User.includes(:likes).find(current_user.id)
+    @like = Like.new
+    @randam = Parise.all.order("RAND()").limit(5)
   end
 
   # POST /parises

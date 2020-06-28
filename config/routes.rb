@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :diaries do
-    resources :parises
+  resources :diaries,only: [:index, :new, :edit, :create, :update, :destroy]
+  resources :parises,only: [:index, :update, :create, :destroy,] do
+    resources :likes, only: [:create, :destroy]
   end
-  resources :genres,only: [:edit, :update, :create, :destroy,]
-  resources :likes, only: [:create, :destroy]
-  resources :users, only: [:index, :show]
+  resources :genres,only: [:update, :create, :destroy,]
+  resources :users, only: [:index, :edit, :update]
   root to: "top#index"
 end

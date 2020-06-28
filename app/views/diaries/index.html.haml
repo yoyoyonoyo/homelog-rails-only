@@ -1,19 +1,28 @@
-%h1 Listing diaries
-
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-
-  %tbody
-    - @diaries.each do |diary|
-      %tr
-        %td= link_to 'Show', diary
-        %td= link_to 'Edit', edit_diary_path(diary)
-        %td= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-= link_to 'New Diary', new_diary_path
+.wrapper
+  = render "module/header"
+  = render "module/left-nav"
+  = render "module/right-main"
+  .right-main
+    .right-main__diaries
+      %h1 日記を見る
+      .right-main__diaries-items
+        - @diaries.each do |diary|
+          = form_with(model: diary, local: true, class:"right-main__diaries-form") do |f|
+            .right-main__diaries-form-items
+              .FormField__label--normal
+                = f.label :created_at
+              .FormField__input--normal
+                = f.date_select :created_at, {include_blank: true, discard_year: true, use_month_numbers: true}, {class: 'time-box'}
+              .FormField__label--normal
+                = f.label :content
+              .FormField__input--normal
+                = f.text_area :content, autofocus: true
+              .FormField__label--normal
+                = f.fields_for :genre do |g_form|
+                  = g_form.text_field :content,wrap: "soft" ,class: "right-main__diary-genre__form"
+              .FormField__input--normal
+                = f.fields_for :parise do |p_form|
+                  = p_form.text_area :content ,wrap: "soft" ,class: "right-main__diary-genre__form"
+            = f.submit "Update", class: 'Button UserButton'
+          = link_to '日記を消す', diary, method: :delete, data: { confirm: 'Are you sure?' }
+  = render "module/footer"

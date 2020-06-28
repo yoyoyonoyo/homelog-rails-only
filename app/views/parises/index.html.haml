@@ -1,19 +1,19 @@
-%h1 Listing parises
+.wrapper
+  = render "module/header"
+  = render "module/left-nav"
+  = render "module/right-main"
+  .right-main
+    .right-main__diaries
+      %h1 褒め言葉
+      .right-main__diaries-items
+      - @parises.each do |parise|
+        = parise.content
+        - if @user.already_liked?(parise)
+          = button_to 'いいねを取り消す', parise_like_path(parise, id: parise.like_ids), method: :delete
+        - else
+          = button_to 'いいね', parise_likes_path(parise)
+        -# いいねしたユーザー
+        -# - parise.liked_users.each do |user|
+        -#   = user.name
 
-%table
-  %thead
-    %tr
-      %th
-      %th
-      %th
-
-  %tbody
-    - @parises.each do |parise|
-      %tr
-        %td= link_to 'Show', parise
-        %td= link_to 'Edit', edit_parise_path(parise)
-        %td= link_to 'Destroy', parise, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-= link_to 'New Parise', new_parise_path
+  = render "module/footer"

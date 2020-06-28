@@ -43,15 +43,25 @@ a {
 
   &__user-items {
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: deeppink;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    grid-template-row: 1fr 2fr;
   }
 
   &__user-title {
-
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
   }
 
   &__user-btns {
+    grid-row: 2 / 3;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   &__user-btn {
@@ -70,16 +80,20 @@ a {
 
   &__menu-items {
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-row: 1fr;
+    justify-items: center;
     align-items:center;
-    flex-direction: column;
   }
   &__menu-title {
-
+    color: deeppink;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
   }
   &__menu-btn {
     border: 1px solid black;
+
   }
 }
 
@@ -88,6 +102,9 @@ a {
   grid-row: 2 / 3 ;
   background-color: lightgrey;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {

@@ -4,15 +4,17 @@
       = current_user.name
       さんのマイページ
     .left-nav__user-btns
-      = link_to "", edit_user_registration_path, class: 'left-nav__user-btn'
-      アカウント編集
-      = link_to "ログアウト", destroy_user_session_path,method: :delete, class: 'left-nav__user-btn'
+      = link_to "アカウント", edit_user_registration_path, class: 'left-nav__user-btn'
+      = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'left-nav__user-btn'
   .left-nav__menu-items
     .left-nav__menu-title
       MENU
     .left-nav__menu-btn
-      = link_to "日記を書く", new_diary_path, class: 'left-nav__menu-btn__write'
-    .left-nav__menu-btn
       = link_to "日記を見る", diaries_path, class: 'left-nav__user-btn__look'
+      -# = image_tag '/'
     .left-nav__menu-btn
-      = link_to "ホメコトバ", edit_user_registration_path, class: 'left-nav__user-btn__home'
+      = link_to "日記を書く", new_diary_path, class: 'left-nav__menu-btn__write'
+      -# = image_tag '/'
+    .left-nav__menu-btn
+      = link_to "ホメコトバ", parises_path , class: 'left-nav__user-btn__home'
+      -# = image_tag '/'

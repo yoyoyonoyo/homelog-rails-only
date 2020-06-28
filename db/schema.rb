@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_26_065050) do
+ActiveRecord::Schema.define(version: 2020_06_28_081221) do
 
   create_table "diaries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "content"
@@ -42,7 +42,9 @@ ActiveRecord::Schema.define(version: 2020_06_26_065050) do
     t.bigint "diary_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
     t.index ["diary_id"], name: "index_parises_on_diary_id"
+    t.index ["user_id"], name: "index_parises_on_user_id"
   end
 
   create_table "tops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

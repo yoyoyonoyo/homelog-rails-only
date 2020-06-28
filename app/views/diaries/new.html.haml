@@ -1,5 +1,26 @@
-%h1 New diary
-
-= render 'form'
-
-= link_to 'Back', diaries_path
+.wrapper
+  = render "module/header"
+  = render "module/left-nav"
+  .right-main
+    .right-main__diary-items
+      .right-main__diary-title
+        %h1 日記を書く
+      = form_with(model: @diary , local: true, class: "right-main__diary-form") do |form|
+        .right-main__diary-day
+          %p<日付
+          = form.date_select :created_at, {include_blank: true, discard_year: true, use_month_numbers: true}, {class: 'time-box'}
+          -# = form.text_field :created_at ,wrap: "soft" ,class: "right-main__diary-day__form"
+        .right-main__diary-genre
+          %p<ジャンル
+          = form.fields_for :genre do |g_form|
+            = g_form.text_field :content,wrap: "soft" ,class: "right-main__diary-genre__form"
+        .right-main__diary-content
+          %p<日記
+          = form.text_area :content,wrap: "soft" ,class: "right-main__diary-content__form"
+        .right-main__diary-parise
+          %p<褒め言葉
+          = form.fields_for :parise do |p_form|
+            = p_form.text_area :content, wrap: "soft" ,class: "right-main__diary-parise__form"
+        .right-main__diary-btns
+          = form.submit "送信", class: 'right-main__diary-btn'
+  = render 'module/footer'

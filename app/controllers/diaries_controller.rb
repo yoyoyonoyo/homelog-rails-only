@@ -2,19 +2,15 @@ class DiariesController < Users::ApplicationController
   before_action :set_diary, only: [:show, :edit, :update, :destroy]
 
   # GET /diaries
-  # GET /diaries.json
   def index
-    @diaries = Diary.all
-  end
-
-  # GET /diaries/1
-  # GET /diaries/1.json
-  def show
+    @diaries = current_user.diaries.includes([:parise,:genre])
   end
 
   # GET /diaries/new
   def new
     @diary = Diary.new
+    @diary.build_genre
+    @diary.build_parise
   end
 
   # GET /diaries/1/edit
@@ -24,13 +20,14 @@ class DiariesController < Users::ApplicationController
   # POST /diaries
   def create
     @diary = Diary.new(diary_params)
-
-    respond_to do |format|
-      if @diary.save
-        format.html { redirect_to @diary, notice: 'Diary was successfully created.' }
-      else
-        format.html { render :new }
-      end
+    @diary.save!
+    # binding.pry
+    if @diary.save
+      flash[:success] = "投稿が完了しました！"
+      redirect_to diaries_url
+    else
+      flash.now[:alert] = "投稿が失敗しました。"
+      render :new
     end
   end
 
@@ -38,9 +35,9 @@ class DiariesController < Users::ApplicationController
   def update
     respond_to do |format|
       if @diary.update(diary_params)
-        format.html { redirect_to @diary, notice: 'Diary was successfully updated.' }
+        format.html { redirect_to diaries_path, notice: 'Diary was successfully updated.' }
       else
-        format.html { render :edit }
+        format.html { render :index, notice: 'Diary was successfully updated.' }
       end
     end
   end
@@ -54,13 +51,14 @@ class DiariesController < Users::ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_diary
-      @diary = Diary.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def diary_params
-      params.fetch(:diary, {})
-    end
+  def set_diary
+    @diary = Diary.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def diary_params
+    params.require(:diary).permit(:content, :created_at, genre_attributes: [:id, :content,:diary_id] ,parise_attributes: [:id, :content, :diary_id]).merge(user_id: current_user.id)
+  end
+
 end
