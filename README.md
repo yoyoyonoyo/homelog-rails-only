@@ -40,7 +40,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 通信してから30秒程で使用できるようになりますので少々お待ちいただけると幸いです。
 
 ### テストID
-User: kakunin@kakunin.com
+User: kakunin@kakunin.com <br>
 Pass: password
 
 ## 💬使い方
