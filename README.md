@@ -11,7 +11,7 @@
 
 ## 🌳概要
 
-<p>個人アプリ初作品。
+個人アプリ初作品。
 自分を褒める日記、略してほめログです！
 ちょっと現時点で未実装な部分が多いですが、暖かい目で見ていただけると幸いです。
 （また、初学者故、間違いが多多あると思います><）
@@ -20,16 +20,16 @@
 
 ## 📕コンセプト資料
 
-### スライド資料
+### 1.スライド資料
 https://docs.google.com/presentation/d/1-yLdL6EGb7CKz5JAPTMgNGhd4SJiFl0Dkw9mLnqQiOc/edit#slide=id.p
 
-### 画面遷移図
+### 2.画面遷移図
 https://app.diagrams.net/#G11aH6Q0kKQP_aXsPAOIB5mtCWrnHVuwpI
 
-### ルーティング図
+### 3.ルーティング図
 https://docs.google.com/spreadsheets/d/1-hJ2gduKFaFmJyH-70-W40NDV__dcQHozb9cGyIb0Vs/edit#gid=0
 
-### ER図
+### 4.ER図
 https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
 ## 🌐アプリのURL
