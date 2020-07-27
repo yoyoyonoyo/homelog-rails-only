@@ -3,9 +3,9 @@
 <h2 align = "center">ほめログ</ h2>
 
 <p align = "center">
-  <a href="https://www.ruby-lang.org/ja/"> <img src = "https://user-images.githubusercontent.com/65913824/88496678-eb9d1200-cff8-11ea-89f5-665b8a754233.png" width="100px;" />
-  <a href="https://rubyonrails.org/"> <img src = "https://user-images.githubusercontent.com/65913824/88496679-ecce3f00-cff8-11ea-9255-e9329756ad8e.png" width="100px;" />
-  <a href="https://jp.heroku.com/"> <img src = "https://user-images.githubusercontent.com/65913824/88497260-cf9a7000-cffa-11ea-8eea-17f192ebcc1f.png" width="100px;" />
+  <a href="https://www.ruby-lang.org/ja/"> <img src = "https://user-images.githubusercontent.com/65913824/88496678-eb9d1200-cff8-11ea-89f5-665b8a754233.png" width="100px;" /></img></a>
+  <a href="https://rubyonrails.org/"> <img src = "https://user-images.githubusercontent.com/65913824/88496679-ecce3f00-cff8-11ea-9255-e9329756ad8e.png" width="100px;" /></img></a>
+  <a href="https://jp.heroku.com/"> <img src = "https://user-images.githubusercontent.com/65913824/88497260-cf9a7000-cffa-11ea-8eea-17f192ebcc1f.png" width="100px;" /></img></a>
 </ P>
 <br>
 
