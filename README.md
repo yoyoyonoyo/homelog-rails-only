@@ -36,7 +36,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
 ### **https://homelog-rails.herokuapp.com/**
 ### **注意点**
-初回起動に時間がかかる場合があります。
+初回起動に時間がかかる場合があります。<br>
 通信してから30秒程で使用できるようになりますので少々お待ちいただけると幸いです。
 
 ## 💬使い方
@@ -45,7 +45,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
 ## 📦機能
 
-<h3 align = "center">- 日記 -</ h3>
+<h3 align = "center">**- 日記 -**</ h3>
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/65913824/88498640-a085fd80-cffe-11ea-8168-f08ad77f84bd.png">
@@ -53,7 +53,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
 ---
 
-<h3 align = "center">- いいね&褒め言葉出力機能 -</ h3>
+<h3 align = "center">**- いいね&褒め言葉出力機能 -**</ h3>
 
 <p align = "center">
   <img src = "https://user-images.githubusercontent.com/65913824/88497797-5d2a8f80-cffc-11ea-99ff-dd92a724d6c1.png">
