@@ -11,12 +11,12 @@
 
 ## 🌳概要
 
-個人アプリ初作品。
+<p>個人アプリ初作品。
 自分を褒める日記、略してほめログです！
 ちょっと現時点で未実装な部分が多いですが、暖かい目で見ていただけると幸いです。
 （また、初学者故、間違いが多多あると思います><）
 
-また、未実装な部分をもありますがまったり実装していきたく思ってます。
+また、未実装な部分をもありますがまったり実装していきたく思ってます。</p>
 
 ## 📕コンセプト資料
 
@@ -67,7 +67,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
 As long as you retain this notice you can do whatever you want
 with this stuff. If we meet some day, and you think this stuff
-is worth it, you can buy me a ** Matcha 🍵** in return.
+is worth it, you can buy me a **Matcha 🍵** in return.
 
 (This license is based on ["THE BEER-WARE LICENSE" (Revision 42)]
  and ["THE SUSHI-WARE LICENSE"].
