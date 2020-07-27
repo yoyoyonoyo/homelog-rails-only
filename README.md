@@ -74,10 +74,10 @@ with this stuff. If we meet some day, and you think this stuff
 is worth it, you can buy me a **Matcha 🍵** in return.
 
 (This license is based on ["THE BEER-WARE LICENSE" (Revision 42)]
- and ["THE SUSHI-WARE LICENSE"].
+ and ["THE SUSHI-WARE LICENSE"].<br>
  Thanks a lot, Poul-Henning Kamp and TSUYUSATO ;)
 
-​["THE BEER-WARE LICENSE" (Revision 42)]: https://people.freebsd.org/~phk/
+​["THE BEER-WARE LICENSE" (Revision 42)]: https://people.freebsd.org/~phk/<br>
 ​["THE SUSHI-WARE LICENSE"]: https://github.com/MakeNowJust/sushi-ware
 
 ## 👀作成者
