@@ -32,12 +32,16 @@ https://docs.google.com/spreadsheets/d/1-hJ2gduKFaFmJyH-70-W40NDV__dcQHozb9cGyIb
 ### 4.ER図
 https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 
-## 🌐アプリのURL
+## 🌐アプリのURL & テストID
 
 ### **https://homelog-rails.herokuapp.com/**
 ### **注意点**
 初回起動に時間がかかる場合があります。<br>
 通信してから30秒程で使用できるようになりますので少々お待ちいただけると幸いです。
+
+### テストID
+User: kakunin@kakunin.com
+Pass: password
 
 ## 💬使い方
 
