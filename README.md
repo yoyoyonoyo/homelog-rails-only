@@ -1,17 +1,16 @@
-![スクリーンショット 2020-07-27 10 59 53](https://user-images.githubusercontent.com/65913824/88498182-6d8f3a00-cffd-11ea-9778-337c89503ef5.png)
+<p align = "center">![スクリーンショット 2020-07-27 10 59 53](https://user-images.githubusercontent.com/65913824/88498182-6d8f3a00-cffd-11ea-9778-337c89503ef5.png)</ P>
 
 <h2 align = "center">ほめログ</ h2>
 
 <p align = "center">
-  <a href="https://www.ruby-lang.org/ja/"> <img src = "src=https://user-images.githubusercontent.com/65913824/88496679-ecce3f00-cff8-11ea-9255-e9329756ad8e.png" width=" 100px; " />詳細<br>
-<a> </a>
-  <a href="https://rubyonrails.org/"> <img src = "https://user-images.githubusercontent.com/65913824/88496678-eb9d1200-cff8-11ea-89f5-665b8a754233.png" width =" 100px; " />詳細
-<a> </a>
-  <a href="https://jp.heroku.com/"> <img src = "https://user-images.githubusercontent.com/65913824/88497260-cf9a7000-cffa-11ea-8eea-17f192ebcc1f.png" width=" 100px; " />詳細
+  <a href="https://www.ruby-lang.org/ja/"> <img src = "https://user-images.githubusercontent.com/65913824/88496678-eb9d1200-cff8-11ea-89f5-665b8a754233.png" size="100px 50px; " />
+  <a href="https://rubyonrails.org/"> <img src = "https://user-images.githubusercontent.com/65913824/88496679-ecce3f00-cff8-11ea-9255-e9329756ad8e.png" size="100px 50px; " />
+  <a href="https://jp.heroku.com/"> <img src = "https://user-images.githubusercontent.com/65913824/88497260-cf9a7000-cffa-11ea-8eea-17f192ebcc1f.png" size="100px 50px; " />
 </ P>
 <br>
 
 ## 🌳概要
+
 個人アプリ初作品。
 自分を褒める日記、略してほめログです！
 ちょっと現時点で未実装な部分が多いですが、暖かい目で見ていただけると幸いです。
@@ -47,7 +46,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 <h3 align = "center">- 日記 -</ h3>
 
 <p align = "center">
-  <img src = "https://user-images.githubusercontent.com/65913824/88497792-59970880-cffc-11ea-9b07-eb0bcbac7686.png" width = 40％>
+  <img src = "https://user-images.githubusercontent.com/65913824/88497792-59970880-cffc-11ea-9b07-eb0bcbac7686.png">
 </ P>
 
 ---
@@ -55,7 +54,7 @@ https://app.diagrams.net/#G14DEoC3nCxe5C7m4I3AeEQa9NzAbHmooo
 <h3 align = "center">- いいね&褒め言葉出力機能 -</ h3>
 
 <p align = "center">
-  <img src = "https://user-images.githubusercontent.com/65913824/88497797-5d2a8f80-cffc-11ea-99ff-dd92a724d6c1.png" width = 40％>
+  <img src = "https://user-images.githubusercontent.com/65913824/88497797-5d2a8f80-cffc-11ea-99ff-dd92a724d6c1.png">
 </ P>
 
 ## 🎫ライセンス
