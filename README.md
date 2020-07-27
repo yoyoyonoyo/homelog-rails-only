@@ -42,13 +42,15 @@ User: kakunin@kakunin.com <br>
 Pass: password
 
 ## 💬使い方(ローカル環境の場合)
-`$ cd "インストールしたいディレクトリ"` <br> <br>
-`$ git clone https:// github.com / yoyoyonoyo / homelog-rails-only.git` <br> <br>
-`$ bundle install` <br> <br>
-`$ yarn install` <br> <br>
-`$ rails db:create` <br> <br>
-`$ rails db:migrate` <br> <br>
-`$ rails s` <br> <br>
+```
+$ cd "インストールしたいディレクトリ"
+$ git clone https:// github.com / yoyoyonoyo / homelog-rails-only.git
+$ bundle install
+$ yarn install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+```
 
 ### **注意点**
 もしローカル環境で実行する場合MySQLが必要となります<br>
